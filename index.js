@@ -1,4 +1,9 @@
 console.clear();
+$.expr[":"].contains = $.expr.createPseudo(function(arg) {
+    return function( elem ) {
+        return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+    };
+});
 var buttonColorOnPress = "white";
 $(document).ready(function(){
 $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
@@ -16,6 +21,7 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
     var mute = 0;
     var stopTimer;
     var previousTime;
+    var safeKill = 0;
     var audio = document.getElementById('audioFile');
     function centerize() {
         var a = $(".current").height();
@@ -149,7 +155,7 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         index = (index+1)%playlist.songs.length;
         indexing = playlist.songs[index];
         $('#audioFile').attr('src',indexing.audio);
-        loadSong();
+        loadSong(); 
     }
     function updateTimer(data){
         if(totalTime == 0 || isNaN(totalTime)){totalTime = parseInt((audio.duration * 1000));processing(data);}
@@ -161,7 +167,10 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         //upadate time on the progress bar
         if(audio.currentTime != previousTime){previousTime=audio.currentTime;$('#currentTime').html(processTime(time));var percent = time/totalTime * 100;$('#progress').css("width",percent+"%");}
         else{ time = parseInt(audio.currentTime*1000);if(time>100)time=time-100;if(play==1){audio.pause();audio.play();} }
+        safeKill = 0;
         while(true){
+            safeKill += 1;
+            if(safeKill >= 100) break;
             if(counter == 0){if(time < timeList[counter]){previous();break;}}
             if((counter == timeList.length) && (time <= timeList[counter-1])){counter--;previous();}
             if(time >= timeList[counter]){if(counter<=timeList.length){counter++;}next();}
