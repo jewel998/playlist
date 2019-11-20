@@ -144,14 +144,16 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         }
     });
     function prevSong(){
-        if(abort_other_json){abort_other_json.abort();reset();clearInterval(stopTimer);timeList=[];previousTime=0;counter=0;}
+        if(abort_other_json){abort_other_json.abort();}reset();timeList=[];previousTime=0;counter=0;
+        clearInterval(stopTimer);
         index = (index-1)%playlist.songs.length;
         indexing = playlist.songs[index];
         $('#audioFile').attr('src',indexing.audio);
         loadSong();
     }
     function nextSong(){
-        if(abort_other_json){abort_other_json.abort();reset();clearInterval(stopTimer);timeList=[];previousTime=0;counter=0;}
+        if(abort_other_json){abort_other_json.abort();}reset();timeList=[];previousTime=0;counter=0;
+        clearInterval(stopTimer);
         index = (index+1)%playlist.songs.length;
         indexing = playlist.songs[index];
         $('#audioFile').attr('src',indexing.audio);
