@@ -3,7 +3,7 @@ If you wish to use it, then go the this [link](https://jewel998.github.io/playli
 
 Hope you like the interface.
 
-#Please Leave a feedback
+# Please Leave a feedback.
 If you find any errors or problems, let me know @jewelbarman998@gmail.com
 Thank you. Happy Developing.
 Personal Space, Please Do Not Interfere
