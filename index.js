@@ -75,7 +75,7 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         audio.currentTime = 0;
     }
     function playSong(){
-        if(play==0){while(audio.readyState != 4)audio.play();play = 1;$('#menu button#play i').removeClass("fa-play");$('#menu button#play i').addClass("fa-pause");}
+        if(play==0){while(audio.readyState != 4 && audio.readyState != 2);audio.play();play = 1;$('#menu button#play i').removeClass("fa-play");$('#menu button#play i').addClass("fa-pause");}
         else{play = 0;audio.pause();$('#menu button#play i').removeClass("fa-pause");$('#menu button#play i').addClass("fa-play");}
     }
     function processing(data){
