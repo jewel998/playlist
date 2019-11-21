@@ -24,6 +24,8 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
     var safeKill = 0;
     var audio = document.getElementById('audioFile');
     function centerize() {
+        if(play == 0) return;
+        if($(".current").length == 0) return;
         var a = $(".current").height();
         var c = $("#lyrics").height();
         var d = $(".current").offset().top - $(".current").parent().offset().top;
