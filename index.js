@@ -170,7 +170,7 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         else if(play == -1){time = 0;}
         //upadate time on the progress bar
         if(audio.currentTime != previousTime){previousTime=audio.currentTime;$('#currentTime').html(processTime(time));var percent = time/totalTime * 100;$('#progress').css("width",percent+"%");}
-        else{ time = parseInt(audio.currentTime*1000);if(time>100)time=time-100;if(play==1){audio.pause();audio.oncanplay=function(){audio.play();}} }
+        else{ time = parseInt(audio.currentTime*1000);if(time>100)time=time-100;if(play==1){audio.pause();if(audio.readyState == 4){audio.play();}} }
         safeKill = 0;
         while(true){
             safeKill += 1;
