@@ -75,7 +75,7 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         audio.currentTime = 0;
     }
     function playSong(){
-        if(play==0){play = 1;audio.play();$('#menu button#play i').removeClass("fa-play");$('#menu button#play i').addClass("fa-pause");}
+        if(play==0){while(audio.readyState != 4)audio.play();play = 1;$('#menu button#play i').removeClass("fa-play");$('#menu button#play i').addClass("fa-pause");}
         else{play = 0;audio.pause();$('#menu button#play i').removeClass("fa-pause");$('#menu button#play i').addClass("fa-play");}
     }
     function processing(data){
@@ -96,11 +96,14 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         $('#progress').css("width",percent+"%");
     }
     $('#progress-bar').on('click',function(event){
+        audio.pause();
+        play = 0;
         var width = $('#progress-bar').css("width");
         var percent = parseInt(event.offsetX)/parseInt(width)*100;
         $('#progress').css("width",percent+"%");
         time = parseInt(totalTime * (percent/100));
         audio.currentTime = parseInt(time/1000);
+        playSong();
     });
     
     function rewind5s(){
@@ -169,8 +172,7 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         if(play == 1){time = time + 1000;}
         else if(play == -1){time = 0;}
         //upadate time on the progress bar
-        if(audio.currentTime != previousTime){previousTime=audio.currentTime;$('#currentTime').html(processTime(time));var percent = time/totalTime * 100;$('#progress').css("width",percent+"%");}
-        else{ time = parseInt(audio.currentTime*1000);if(time>100)time=time-100;if(play==1){audio.pause();if(audio.readyState == 4){audio.play();}} }
+        $('#currentTime').html(processTime(time));var percent = time/totalTime * 100;$('#progress').css("width",percent+"%");
         safeKill = 0;
         while(true){
             safeKill += 1;
