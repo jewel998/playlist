@@ -95,25 +95,30 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
         var percent = time/totalTime * 100;
         $('#progress').css("width",percent+"%");
     }
-    $('#progress-bar').on('mouseup',function(event){
-        event.preventDefault;
-        if(event.target.id == "progressButton") return;
-        var width = $('#progress-bar').css("width");
-        var percent = parseInt(event.offsetX)/parseInt(width)*100;
-        $('#progress').css("width",percent+"%");
-        time = parseInt(totalTime * (percent/100));
-        audio.currentTime = parseInt(time/1000);
-    });
-    $('#progressButton').on('mousedown',function(){
+    $('#progress-bar').on('mousedown',function(){
         $('#progress-bar').on('mousemove',function handler(event){
           event.preventDefault;
-          if(event.offsetY > 5 || event.offsetY < 0) return;
+          if(event.offsetY > 5 || event.offsetY < 1) return;
           var width = $('#progress-bar').css("width");
           var percent = parseInt(event.offsetX)/parseInt(width)*100;
           $('#progress').css("width",percent+"%");
           time = parseInt(totalTime * (percent/100));
           audio.currentTime = parseInt(time/1000);
         });
+    });
+    $('#progressButton').on('mousedown',function(){
+        $('#progress-bar').on('mousemove',function handler(event){
+          event.preventDefault;
+          if(event.offsetY > 5 || event.offsetY < 1) return;
+          var width = $('#progress-bar').css("width");
+          var percent = parseInt(event.offsetX)/parseInt(width)*100;
+          $('#progress').css("width",percent+"%");
+          time = parseInt(totalTime * (percent/100));
+          audio.currentTime = parseInt(time/1000);
+        });
+    });
+    $('#progress-bar').mouseup(function(){
+        $('#progress-bar').off('mousemove');
     });
     $('#progressButton').mouseup(function(){
         $('#progress-bar').off('mousemove');
