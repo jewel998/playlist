@@ -194,7 +194,7 @@ $.getJSON('https://jewel998.github.io/playlist/playlist.json',function(data){
             if((counter == timeList.length) && (time <= timeList[counter-1])){counter--;previous();}
             if(time >= timeList[counter]){if(counter<=timeList.length){counter++;}next();}
             else if(time < timeList[counter-1]){counter--;previous();}
-            else{if(play == 1)centerize();break;}
+            else{if(play == 1 && !audio.paused && !audio.ended)centerize();break;}
         }
     }
     function loadSong(){
