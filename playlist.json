@@ -1,13 +1,67 @@
 {
     "songs":[
-      {"json":"https://jewel998.github.io/playlist/data/NovoAmor-StateLines.json","audio":"https://jewel998.github.io/playlist/music/NovoAmor-StateLines.mp3"},
-      {"json":"https://jewel998.github.io/playlist/data/DavidChoi-ByMySide.json","audio":"https://jewel998.github.io/playlist/music/DavidChoi-ByMySide.mp3"},
-      {"json":"https://jewel998.github.io/playlist/data/Marshmelloft.Bastille-Happier.json","audio":"https://jewel998.github.io/playlist/music/Marshmelloft.Bastille-Happier.mp3"},
-      {"json":"https://jewel998.github.io/playlist/data/ChancePena-UpUp&Away.json","audio":"https://jewel998.github.io/playlist/music/ChancePena-UpUp&Away.mp3"},
-      {"json":"https://jewel998.github.io/playlist/data/HONNE-Me&You.json","audio":"https://jewel998.github.io/playlist/music/HONNE-Me&You.mp3"},
-      {"json":"https://jewel998.github.io/playlist/data/Lenka-DontLetMeFall.json","audio":"https://jewel998.github.io/playlist/music/Lenka-DontLetMeFall.mp3"},
-      {"json":"https://jewel998.github.io/playlist/data/ExplosionsInTheSky-YourHandInMine.json","audio":"https://jewel998.github.io/playlist/music/ExplosionsInTheSky-YourHandInMine.mp3"},
-      {"json":"https://jewel998.github.io/playlist/data/Birdy-TheDistrictSleepsAloneTonight.json","audio":"https://jewel998.github.io/playlist/music/Birdy-TheDistrictSleepsAloneTonight.mp3"},
-      {"json":"https://jewel998.github.io/playlist/data/Daughter-Shallows.json","audio":"https://jewel998.github.io/playlist/music/Daughter-Shallows.mp3"}
+      {
+        "albumart": "https://res-4.cloudinary.com/synchtank-com/image/upload/s--ZHu6g1XW--/c_fill,g_auto,h_720,w_720/q_auto:eco/object-70210148.jpg",
+        "author": "Novo Amor",
+        "song": "State Lines",
+        "json":"https://jewel998.github.io/playlist/data/NovoAmor-StateLines.json",
+        "audio":"https://jewel998.github.io/playlist/music/NovoAmor-StateLines.mp3"
+      },
+      {
+        "albumart": "https://a3-images.myspacecdn.com/images03/33/94c9bc0e578c49f0913d7a14bf335f45/600x600.jpg",
+        "author": "David Choi",
+        "song": "By My Side",
+        "json":"https://jewel998.github.io/playlist/data/DavidChoi-ByMySide.json",
+        "audio":"https://jewel998.github.io/playlist/music/DavidChoi-ByMySide.mp3"
+      },
+      {
+        "albumart": "https://i.redd.it/ampjk9dyz6g11.jpg",
+        "author": "Marshmello ft. Bastille",
+        "song": "Happier",
+        "json":"https://jewel998.github.io/playlist/data/Marshmelloft.Bastille-Happier.json",
+        "audio":"https://jewel998.github.io/playlist/music/Marshmelloft.Bastille-Happier.mp3"
+      },
+      {
+        "song": "Up Up & Away",
+        "author": "Chance Peña",
+        "albumart": "https://i.ytimg.com/vi/dXIDKD-qS90/maxresdefault.jpg",
+        "json":"https://jewel998.github.io/playlist/data/ChancePena-UpUp&Away.json",
+        "audio":"https://jewel998.github.io/playlist/music/ChancePena-UpUp&Away.mp3"
+      },
+      {
+        "albumart": "https://images.genius.com/bdc8b41f2277b15a01061aede8cbcef5.939x939x1.jpg",
+        "author": "HONNE",
+        "song": "Me & You",
+        "json":"https://jewel998.github.io/playlist/data/HONNE-Me&You.json",
+        "audio":"https://jewel998.github.io/playlist/music/HONNE-Me&You.mp3"
+      },
+      {
+        "song":"Don't Let Me Fall",
+        "author":"Lenka",
+        "albumart":"http://lenkamusic.com/wp-content/uploads/2018/09/AlbumPoster.jpg",
+        "json":"https://jewel998.github.io/playlist/data/Lenka-DontLetMeFall.json",
+        "audio":"https://jewel998.github.io/playlist/music/Lenka-DontLetMeFall.mp3"
+      },
+      {
+        "albumart": "https://f4.bcbits.com/img/a1743834394_10.jpg",
+        "author": "Explosions In The Sky",
+        "song": "Your Hand In Mine",
+        "json":"https://jewel998.github.io/playlist/data/ExplosionsInTheSky-YourHandInMine.json",
+        "audio":"https://jewel998.github.io/playlist/music/ExplosionsInTheSky-YourHandInMine.mp3"
+      },
+      {
+        "albumart": "https://t2.genius.com/unsafe/275x0/https%3A%2F%2Fimages.genius.com%2F99a8075e5a9ce331bd97e3983a60cbdd.1000x1000x1.jpg",
+        "author": "Birdy",
+        "song": "The District Sleeps Alone Tonight",
+        "json":"https://jewel998.github.io/playlist/data/Birdy-TheDistrictSleepsAloneTonight.json",
+        "audio":"https://jewel998.github.io/playlist/music/Birdy-TheDistrictSleepsAloneTonight.mp3"
+      },
+      {
+        "albumart":"https://cdn3.clickthecity.com/images/movies/poster/600/16960.jpg",
+        "song":"Shallows",
+        "author":"Daughter",
+        "json":"https://jewel998.github.io/playlist/data/Daughter-Shallows.json",
+        "audio":"https://jewel998.github.io/playlist/music/Daughter-Shallows.mp3"
+      }
     ]
   }
