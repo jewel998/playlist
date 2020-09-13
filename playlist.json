@@ -1,11 +1,32 @@
 {
     "songs":[
       {
+        "albumart": "https://t2.genius.com/unsafe/275x0/https%3A%2F%2Fimages.genius.com%2F76c6355dde0dcc5e9c923b3598a74f81.1000x996x1.jpg",
+        "author": "Daughter",
+        "song": "Youth",
+        "json":"https://jewel998.github.io/playlist/data/Daughter-Youth.json",
+        "audio":"https://jewel998.github.io/playlist/music/Daughter-Youth.mp3"
+      },
+      {
         "albumart": "https://res-4.cloudinary.com/synchtank-com/image/upload/s--ZHu6g1XW--/c_fill,g_auto,h_720,w_720/q_auto:eco/object-70210148.jpg",
         "author": "Novo Amor",
         "song": "State Lines",
         "json":"https://jewel998.github.io/playlist/data/NovoAmor-StateLines.json",
         "audio":"https://jewel998.github.io/playlist/music/NovoAmor-StateLines.mp3"
+      },
+      {
+        "albumart": "https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/imageFull/.f7PO1krW/SharedImage-91162.jpg?t=57753a40748dd1bffc6b",
+        "author": "Lewis Capaldi",
+        "song": "Someone You Loved",
+        "json":"https://jewel998.github.io/playlist/data/LewisCapaldi-SomeoneYouLoved.json",
+        "audio":"https://jewel998.github.io/playlist/music/LewisCapaldi-SomeoneYouLoved.mp3"
+      },
+      {
+        "albumart": "https://t2.genius.com/unsafe/275x0/https%3A%2F%2Fimages.genius.com%2F5ca6e4f7d80f35679c4c65b93ea7a9c1.500x496x1.jpg",
+        "author": "Yutaka Yamada",
+        "song": "Remembering",
+        "json":"https://jewel998.github.io/playlist/data/YutakaYamada-Remembering.json",
+        "audio":"https://jewel998.github.io/playlist/music/YutakaYamada-Remembering.mp3"
       },
       {
         "albumart": "https://a3-images.myspacecdn.com/images03/33/94c9bc0e578c49f0913d7a14bf335f45/600x600.jpg",
@@ -15,7 +36,7 @@
         "audio":"https://jewel998.github.io/playlist/music/DavidChoi-ByMySide.mp3"
       },
       {
-        "albumart": "https://i.redd.it/ampjk9dyz6g11.jpg",
+        "albumart": "https://upload.wikimedia.org/wikipedia/en/e/e5/Marshmello_and_Bastille_Happier.png",
         "author": "Marshmello ft. Bastille",
         "song": "Happier",
         "json":"https://jewel998.github.io/playlist/data/Marshmelloft.Bastille-Happier.json",
@@ -43,7 +64,7 @@
         "audio":"https://jewel998.github.io/playlist/music/Lenka-DontLetMeFall.mp3"
       },
       {
-        "albumart": "https://f4.bcbits.com/img/a1743834394_10.jpg",
+        "albumart": "https://cdn.shopify.com/s/files/1/1616/2793/t/5/assets/logo-image-file.png?v=14513997102713647500",
         "author": "Explosions In The Sky",
         "song": "Your Hand In Mine",
         "json":"https://jewel998.github.io/playlist/data/ExplosionsInTheSky-YourHandInMine.json",
