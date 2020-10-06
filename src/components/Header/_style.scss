@@ -1,0 +1,41 @@
+header{
+    position: fixed;
+    top:0;
+    width:95%;
+    padding:12px 1.5% 10px;
+    color:white;
+    z-index:50;
+    pointer-events:none;
+    #top-bar{
+        position:relative;
+        width: 100%;
+        margin:auto;
+        button{
+            margin: 0;
+            background: inherit;
+            color:inherit;
+            border: none;
+            padding: 5px 10px;
+            margin-right:16px;
+            font-size:18px;
+            cursor:pointer;
+            pointer-events:all;
+        }
+        #about-song{
+            width: 50%;
+            margin:0;
+            font-size:70%;
+            line-height:180%;
+            &.hide{
+                visibility: hidden;
+            }
+            *{
+                margin:0;
+                width:100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+.flex{
+    display:flex;
+    &.vrtlCenter{align-items: center;}
+    &.hrtlCenter{justify-content:center;}
+}
